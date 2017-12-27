@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:layout_height="match_parent">
+    <ImageView
+        style="@style/ImagePicxiao"
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/iv_pic"
+        />
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_marginLeft="5dp"
+            style="@style/textcontentsizeblack"
+            android:layout_weight="1"
+             />
+        <ImageView
+            style="@style/Rightarrow"
+            android:src="@mipmap/icon_jiantourig"
+             />
+</LinearLayout>

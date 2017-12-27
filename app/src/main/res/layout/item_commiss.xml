@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:background="@drawable/shape_commiss_bg"
+        android:layout_height="60dp"
+        >
+        <TextView
+            android:id="@+id/tv_date"
+           style="@style/textcontentsizeblack"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/orange"
+            android:textSize="11sp"
+            android:text="2017年11月11日 13:47"
+            />
+        <TextView
+            android:id="@+id/tv_mony"
+            style="@style/texttitleblacksize"
+            android:layout_centerVertical="true"
+           android:layout_marginRight="10dp"
+            android:textColor="@color/orange"
+            android:layout_alignParentRight="true"
+            android:text="+200"
+            />
+    </RelativeLayout>
+</LinearLayout>

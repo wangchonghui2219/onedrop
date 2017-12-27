@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/ll_head"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="#4B73Ae"
+        android:paddingLeft="20dp"
+        android:paddingTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal"
+        android:paddingBottom="30dp"
+        android:orientation="horizontal"
+        >
+    <ImageView
+        style="@style/ImagePicicon"
+        android:id="@+id/iv_pic"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@mipmap/icon_zhifuliebiao"
+        />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="30dp"
+            >
+            <TextView
+                android:id="@+id/tv_name"
+                style="@style/texttitleswhiteize"
+                android:text="中国建设银行"
+                android:textSize="18sp"
+
+                 />
+            <TextView
+                android:id="@+id/tv_type"
+                style="@style/textcontents11izewhite"
+                android:text="储蓄卡"
+                android:layout_marginTop="5dp"
+                android:textSize="13sp"
+                />
+             <TextView
+                 android:id="@+id/tv_number"
+                style="@style/textcontents11izewhite"
+                 android:layout_marginTop="5dp"
+                 android:textSize="16sp"
+                android:text="****       ****     ****                 1234"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

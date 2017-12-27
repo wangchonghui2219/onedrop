@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="Imagepicxiao">25dp</dimen>
+    <dimen name="Imagepicicon">40dp</dimen>
+    <dimen name="rightarrows">15dp</dimen>
+    <dimen name="delete">80dp</dimen>
+</resources>

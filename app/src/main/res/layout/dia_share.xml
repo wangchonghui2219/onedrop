@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <TextView
+            style="@style/textcontentsizeblack"
+            android:padding="10dp"
+            android:layout_gravity="center_horizontal"
+            android:text="分享到"
+            />
+    <View
+        style="@style/div_line"
+        />
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:id="@+id/ll_QQ"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+                <ImageView
+                   style="@style/ImagePicicon"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@mipmap/icon_qq"
+                    />
+            <TextView
+                android:layout_marginTop="3dp"
+               style="@style/textcontentsizeblack"
+                android:text="QQ"
+                android:layout_marginLeft="0dp"
+                android:layout_gravity="center_horizontal"
+                />
+
+        </LinearLayout>
+         <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+             android:id="@+id/ll_Zone"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+                <ImageView
+                    style="@style/ImagePicicon"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@mipmap/icon_fxkj"
+                    />
+            <TextView
+                android:layout_marginTop="3dp"
+               style="@style/textcontentsizeblack"
+                android:layout_marginLeft="0dp"
+                android:text="空间"
+                android:layout_gravity="center_horizontal"
+                />
+
+        </LinearLayout>
+         <LinearLayout
+             android:id="@+id/ll_pyq"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+                <ImageView
+                    style="@style/ImagePicicon"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@mipmap/icon_fxpyq"
+                    />
+            <TextView
+                android:layout_marginTop="3dp"
+               style="@style/textcontentsizeblack"
+                android:text="朋友圈"
+                android:layout_marginLeft="0dp"
+                android:layout_gravity="center_horizontal"
+                />
+
+        </LinearLayout>
+         <LinearLayout
+             android:id="@+id/ll_Wx"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+                <ImageView
+                    style="@style/ImagePicicon"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@mipmap/icon_fxweixin"
+                    />
+            <TextView
+                android:layout_marginTop="3dp"
+               style="@style/textcontentsizeblack"
+                android:text="微信"
+                android:layout_marginLeft="0dp"
+                android:layout_gravity="center_horizontal"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

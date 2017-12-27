@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dlwx.onedrop.activitys.MessageActivity">
+    <include
+
+        layout="@layout/toolbar"
+        />
+        <LinearLayout
+            android:id="@+id/ll_sysytem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            >
+            <RelativeLayout
+                android:layout_width="50dp"
+                android:layout_height="50dp">
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/icon_xxxitong"
+                />
+                <TextView
+                    android:id="@+id/tv_sysnum"
+                    style="@style/textcontentsizewhite"
+                    android:text="5"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/shape_reddot"
+                    />
+            </RelativeLayout>
+                <TextView
+
+                    style="@style/texttitleblacksize"
+                    android:text="系统消息"
+                    android:layout_marginLeft="10dp"
+                    />
+        </LinearLayout>
+    <View
+        style="@style/div_line"
+        />
+    <LinearLayout
+        android:id="@+id/ll_ordermess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        >
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/icon_xxneibu"
+                />
+            <TextView
+                android:id="@+id/tv_ordernum"
+                style="@style/textcontentsizewhite"
+                android:text="5"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/shape_reddot"
+                />
+        </RelativeLayout>
+
+        <TextView
+
+            style="@style/texttitleblacksize"
+            android:text="订单消息"
+            android:layout_marginLeft="10dp"
+            />
+    </LinearLayout>
+    <View
+        style="@style/div_line"
+        />
+</LinearLayout>

@@ -1,0 +1,84 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        debug {
+            keyAlias '一滴水'
+            keyPassword '123456'
+            storeFile file('E:/dlwx/keystore/onedrop.jks')
+            storePassword '123456'
+        }
+    }
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.dlwx.onedrop"
+        minSdkVersion 16
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0.1"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk {
+            //选择要添加的对应cpu类型的.so库。
+            abiFilters 'armeabi', 'armeabi-v7a', 'arm64-v8a',
+                    'x86', 'x86_64', 'mips', 'mips64'
+        }
+
+        manifestPlaceholders = [
+                JPUSH_PKGNAME: applicationId,
+                JPUSH_APPKEY : "f748150e95aae8da7cb4d531", //JPush上注册的包名对应的appkey.
+                JPUSH_CHANNEL: "developer-default", //暂时填写默认值即可.
+        ]
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            signingConfig signingConfigs.debug
+        }
+    }
+    allprojects {
+        repositories {
+            //mavenCentral()
+            maven { url 'https://jitpack.io' }
+        }
+
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+
+        }
+    }
+    dexOptions {
+        jumboMode true
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.android.support:support-v4:26.1.0'
+    testImplementation 'junit:junit:4.12'
+    compile 'com.android.support:cardview-v7:21.0.+'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    implementation project(':baselib')
+    compile 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    compile 'com.amap.api:location:latest.integration'
+    implementation files('libs/alipaySdk-20170309.jar')
+    implementation files('libs/mta-sdk-1.6.2.jar')
+    implementation files('libs/open_sdk_r5781.jar')
+    compile 'com.yanzhenjie:recyclerview-swipe:1.1.2'
+    compile 'com.jungly:GridPasswordView:0.1'
+    compile 'com.xingliuhua:xlhratingbar_lib:1.0.1'
+    compile 'com.github.xiaoyanger0825:NiceVieoPlayer:v2.2'
+    // 此处以JCore 1.1.7 版本为例。
+    implementation files('libs/jcore-android-1.1.7.jar')
+    implementation files('libs/jpush-android-3.0.9.jar')
+    compile 'com.romandanylyk:pageindicatorview:+'
+}

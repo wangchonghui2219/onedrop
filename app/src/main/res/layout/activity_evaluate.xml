@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dlwx.onedrop.activitys.EvaluateActivity">
+    <include
+        layout="@layout/toolbar"
+        />
+    <TextView
+        style="@style/textcontentsizeblack"
+        android:text="详情介绍："
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <EditText
+        android:id="@+id/et_content"
+        android:padding="10dp"
+        style="@style/textcontentsizeblack"
+        android:layout_height="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:background="@null"
+        android:gravity="left"
+        android:hint="宝贝满足您的期待吗？说说你的使用心得，分享给想买的他们吧"
+        android:singleLine="false"
+         />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="60dp"
+        android:orientation="horizontal"
+        >
+        <GridView
+            android:listSelector="@color/white"
+            android:layout_width="wrap_content"
+            android:scrollbars="none"
+            android:layout_height="wrap_content"
+            android:id="@+id/gv_list"
+            android:numColumns="5"
+            >
+        </GridView>
+
+    </LinearLayout>
+
+
+
+
+        <View
+            style="@style/div_line"
+            android:layout_marginTop="10dp"
+            android:layout_height="5dp"
+            />
+    <TextView
+        style="@style/textcontentsizeblack"
+        android:layout_marginLeft="20dp"
+        android:text="星级"
+        />
+
+    <!--style="@style/roomRatingBar"-->
+    <com.example.xlhratingbar_lib.XLHRatingBar
+        xmlns:xlhRatingBar="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/ev_ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        xlhRatingBar:canEdit="true"
+        android:layout_marginLeft="50dp"
+        xlhRatingBar:countSelected="1"
+        xlhRatingBar:differentSize="false"
+        xlhRatingBar:dividerWidth="3dp"
+        xlhRatingBar:starCount="5"
+        xlhRatingBar:stateResId="@drawable/selete_xingxing"
+        xlhRatingBar:widthAndHeight="20dp" />
+        <Button
+            android:id="@+id/btn_submit"
+            android:text="提交"
+            style="@style/Buutton_submit"
+            android:layout_width="150dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            />
+</LinearLayout>

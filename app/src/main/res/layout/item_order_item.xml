@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/tv_desc"
+            android:textSize="11sp"
+            android:layout_marginTop="20dp"
+            android:layout_width="0dp"
+            android:lineSpacingExtra="2dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="请以上区域内的单位和居民提前做好贮水准备，自来水公司对本次停水给附近用户带来的不便表示歉意。如有疑问，请拨打供水热线67680000"
+            android:layout_height="wrap_content"
+            
+            />
+        <ImageView
+            android:id="@+id/iv_pic"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            />
+    </LinearLayout>
+</LinearLayout>

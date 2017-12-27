@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dlwx.onedrop.activitys.HtmlActivity">
+    <include
+        layout="@layout/toolbar"
+        />
+    <ImageView
+        android:id="@+id/iv_pic"
+        android:layout_width="match_parent"
+        android:scaleType="fitXY"
+        android:layout_height="200dp"
+        />
+        <TextView
+            android:id="@+id/tv_smalltitle"
+            style="@style/texttitleswhiteize"
+            android:textColor="@color/orange"
+            android:padding="10dp"
+             />
+    <View
+        style="@style/div_line"
+        android:layout_marginBottom="10dp"
+        />
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_margin="10dp"
+            android:lineSpacingExtra="3dp"
+            style="@style/textcontentsizeblack"
+             />
+</LinearLayout>

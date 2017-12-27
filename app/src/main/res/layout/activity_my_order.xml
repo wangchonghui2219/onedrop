@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dlwx.onedrop.activitys.MyOrderActivity">
+    <include
+        layout="@layout/toolbar"
+        />
+    <RadioGroup
+        android:id="@+id/rg_cont"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="全部订单"
+            android:id="@+id/rb_allorder"
+            android:background="@drawable/selete_button_color"
+            android:textColor="@drawable/selete_radio_textcolor"
+            android:gravity="center"
+            android:layout_height="match_parent"
+
+            />
+        <RadioButton
+            android:id="@+id/rb_receive"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="已收货订单"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/selete_button_color"
+            android:textColor="@drawable/selete_radio_textcolor"
+            android:gravity="center"
+            android:layout_height="match_parent"
+
+            />
+        <RadioButton
+            android:id="@+id/rb_unreceive"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/selete_button_color"
+            android:button="@null"
+            android:gravity="center"
+            android:text="未收货订单"
+            android:textColor="@drawable/selete_radio_textcolor"
+
+            />
+
+    </RadioGroup>
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:layout_width="match_parent"
+        android:id="@+id/refreshLayout"
+        app:srlEnablePreviewInEditMode="true"
+        android:layout_height="match_parent">
+    <ListView
+        android:id="@+id/lv_list"
+        android:layout_width="match_parent"
+        android:divider="@null"
+        android:scrollbars="none"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        >
+
+    </ListView>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    <include
+        layout="@layout/entry"
+        />
+</LinearLayout>

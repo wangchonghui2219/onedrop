@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dlwx.onedrop.activitys.RegisterMessActivity">
+    <include
+        layout="@layout/toolbar"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/icon_logo" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+        <View style="@style/div_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/div_color" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/div_color" />
+
+            <TextView
+                style="@style/texttitleblacksize"
+                android:layout_width="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1.17"
+                android:text="@string/invitecode" />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/div_color" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <EditText
+                    android:maxLines="1"
+                    android:id="@+id/et_invitecode"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="@string/placrinvitecode"
+                    android:padding="10dp"
+                    android:textSize="15sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="(选填)"
+                        android:layout_marginRight="20dp"
+                        />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View style="@style/div_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/texttitleblacksize"
+                android:layout_width="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1.2"
+                android:text="@string/username" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/div_color" />
+
+            <EditText
+                android:id="@+id/et_username"
+                android:layout_width="0dp"
+                android:maxLines="1"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:background="@null"
+                android:hint="@string/placeusername"
+                android:padding="10dp"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <View style="@style/div_line" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/texttitleblacksize"
+                android:layout_width="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1.2"
+                android:text="@string/password" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/div_color" />
+
+            <EditText
+                android:id="@+id/et_pwd"
+                android:layout_width="0dp"
+                android:maxLines="1"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:background="@null"
+                android:hint="@string/placepassword"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:textSize="15sp" />
+        </LinearLayout>
+        <View style="@style/div_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/texttitleblacksize"
+                android:layout_width="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1.2"
+                android:text="@string/passwordaff" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/div_color" />
+
+            <EditText
+                android:id="@+id/et_affpwd"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:maxLines="1"
+                android:background="@null"
+                android:hint="@string/inputpasswordaff"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:textSize="15sp" />
+        </LinearLayout>
+        <View style="@style/div_line" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/selete_check"
+                android:checked="true"
+                android:enabled="false"
+                android:text="  注册并同意"
+                android:layout_margin="10dp"
+                android:textColor="@color/garytext"
+                android:textSize="13sp" />
+                <TextView
+                    android:id="@+id/tv_proto"
+                    style="@style/textcontentsizeblack"
+                    android:textColor="@color/orange"
+                    android:text="《用户协议》"
+                     />
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_next"
+            style="@style/Buutton_submit"
+            android:layout_marginTop="50dp"
+            android:text="注册" />
+    </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            />
+</LinearLayout>

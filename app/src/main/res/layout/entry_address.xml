@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/ll_entry"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="100dp"
+            >
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/icon_shouhuodizhi"
+                />
+                <TextView
+                    style="@style/textcontentsizeblack"
+                    android:layout_marginTop="30dp"
+                    android:text="您还没有收货地址，请点击下方添加地址"
+                    android:layout_gravity="center_horizontal"
+                    />
+        </LinearLayout>
+            <Button
+                android:id="@+id/btn_add"
+                style="@style/Buutton_submit"
+                android:textColor="@color/black"
+                android:text="+添加地址"
+                android:background="@drawable/shape_address_bg"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp"
+                />
+</RelativeLayout>

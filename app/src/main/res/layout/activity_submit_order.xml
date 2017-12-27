@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dlwx.onedrop.activitys.SubmitOrderActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+    <TextView
+        style="@style/texttitleblacksize"
+        android:text="购买详情"
+        android:padding="5dp"
+        android:textColor="@color/orange" />
+
+        <ListView
+            android:id="@+id/lv_list"
+            android:divider="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            />
+    <RelativeLayout
+        android:id="@+id/rl_entry"
+
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/icon_shouhuo" />
+
+            <TextView
+                style="@style/texttitleblacksize"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="添加收货地址" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_noentry"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_seleteAddress"
+                style="@style/texttitleblacksize"
+                android:text="地址管理"
+                android:padding="5dp"
+                android:textColor="@color/orange" />
+
+            <TextView
+                android:id="@+id/tv_edit"
+                style="@style/texttitleblacksize"
+                android:text=" 修改"
+                android:drawableLeft="@mipmap/icon_bianji"
+                android:padding="5dp"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/orange" />
+
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                style="@style/textcontentsizeblack"
+                android:id="@+id/tv_name"
+                android:text="张三"
+                android:layout_marginLeft="50dp"
+                android:padding="10dp"
+                />
+            <View
+                style="@style/div_line"
+                />
+            <TextView
+                style="@style/textcontentsizeblack"
+                android:id="@+id/tv_phone"
+                android:text="18637051978"
+                android:layout_marginLeft="50dp"
+                android:padding="10dp"
+                />
+            <View
+                style="@style/div_line"
+                />
+            <TextView
+                style="@style/textcontentsizeblack"
+                android:id="@+id/tv_address"
+                android:layout_marginLeft="50dp"
+                android:text="河南省郑州市金水区"
+                android:padding="10dp"
+                />
+            <View
+                style="@style/div_line"
+                />
+            <TextView
+                style="@style/textcontentsizeblack"
+                android:id="@+id/tv_descaddress"
+                android:layout_marginLeft="50dp"
+                android:text="花园路农科路安华大厦1506"
+                android:padding="10dp"
+                />
+            <View
+                style="@style/div_line"
+                />
+        </LinearLayout>
+    </LinearLayout>
+        </LinearLayout>
+        <View
+            style="@style/div_line"
+            />
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                style="@style/textcontentsizeblack"
+                android:text="合计："
+                />
+            <TextView
+                android:id="@+id/tv_totalPrice"
+                style="@style/textcontentsizeblack"
+                android:text="￥999.00"
+                android:textColor="@color/orange"
+                android:layout_weight="1"
+                />
+                <Button
+                    android:id="@+id/btn_submit"
+                    android:layout_width="100dp"
+                    android:text="立即支付"
+                    android:textColor="@color/white"
+                    android:layout_height="match_parent"
+                    android:background="@color/orange"
+                    />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>

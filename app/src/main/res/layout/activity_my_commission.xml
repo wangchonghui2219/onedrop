@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dlwx.onedrop.activitys.MyCommissionActivity">
+    <include
+        layout="@layout/toolbar"
+        />
+        <RadioGroup
+            android:id="@+id/rg_cont"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            >
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:text="每天"
+                android:id="@+id/rb_everyday"
+                android:background="@drawable/selete_button_color"
+                android:textColor="@drawable/selete_radio_textcolor"
+                android:gravity="center"
+                android:layout_height="match_parent"
+
+                />
+        <RadioButton
+            android:id="@+id/rb_everymonth"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:text="每月"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/selete_button_color"
+                android:textColor="@drawable/selete_radio_textcolor"
+                android:gravity="center"
+                android:layout_height="match_parent"
+
+                />
+
+            <RadioButton
+                android:id="@+id/rb_histhory"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/selete_button_color"
+                android:button="@null"
+                android:gravity="center"
+                android:text="历史数据"
+                android:textColor="@drawable/selete_radio_textcolor"
+
+                />
+
+        </RadioGroup>
+    <ImageView
+        android:id="@+id/iv_entry"
+        android:visibility="gone"
+        style="@style/ImageEntry"
+        />
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:layout_width="match_parent"
+        android:id="@+id/refreshLayout"
+        app:srlEnablePreviewInEditMode="true"
+        android:layout_height="match_parent">
+        <ListView
+            android:layout_width="match_parent"
+            android:id="@+id/lv_list"
+            android:divider="@color/white"
+            android:layout_height="wrap_content">
+
+        </ListView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

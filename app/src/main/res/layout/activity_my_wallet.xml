@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dlwx.onedrop.activitys.MyWalletActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@mipmap/icon_wdbg"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/tool_bar"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+            <TextView
+                android:id="@+id/tv_title"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="18sp" />
+
+        </android.support.v7.widget.Toolbar>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                style="@style/textcontentsizewhite"
+                android:layout_marginLeft="20dp"
+                android:text="账户余额"
+
+                android:layout_weight="1"
+                 />
+            <com.dlwx.baselib.view.CircleImageView
+                android:id="@+id/iv_head"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@mipmap/icon_touxiang"
+                android:layout_marginRight="20dp"
+                />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_money"
+            style="@style/textcontentsizewhite"
+                android:textSize="30sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+             />
+    </LinearLayout>
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lv_list"
+            ></ListView>
+    <View
+        style="@style/div_line"
+        android:layout_height="8dp"
+        />
+</LinearLayout>

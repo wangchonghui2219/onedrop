@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dlwx.onedrop.activitys.SystemMessCenActivity">
+    <include
+        layout="@layout/toolbar"
+        />
+        <TextView
+            style="@style/texttitleblacksize"
+            android:padding="10dp"
+            android:id="@+id/tv_titlename"
+            android:layout_gravity="center_horizontal"
+             />
+            <TextView
+                style="@style/textcontentsizeblack"
+                android:layout_margin="20dp"
+                android:lineSpacingExtra="2dp"
+                android:id="@+id/tv_content"
+                />
+</LinearLayout>

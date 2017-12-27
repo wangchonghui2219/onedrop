@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dlwx.onedrop.activitys.RevampPhoneActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <include
+            layout="@layout/toolbar"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+
+                style="@style/texttitleblacksize"
+                android:layout_width="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1.2"
+                android:text="@string/phone" />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/div_color" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+            <EditText
+                android:id="@+id/et_phone"
+                android:layout_width="0dp"
+                android:inputType="phone"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:background="@null"
+                android:hint="@string/placephone"
+                android:padding="10dp"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/tv_auth"
+                style="@style/textcontentsizewhite"
+                android:text="获取验证码"
+                android:gravity="center_horizontal"
+                android:layout_width="80dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/shape_auth_bg"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/div_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/texttitleblacksize"
+            android:layout_width="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1.2"
+            android:text="@string/authcode" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/div_color" />
+
+        <EditText
+            android:id="@+id/et_authcode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:hint="@string/placeauthcode"
+            android:padding="10dp"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <View style="@style/div_line" />
+    </LinearLayout>
+        <Button
+            android:id="@+id/btn_submit"
+            style="@style/Buutton_submit"
+            android:text="@string/complete"
+            android:layout_centerInParent="true"
+             />
+</RelativeLayout>

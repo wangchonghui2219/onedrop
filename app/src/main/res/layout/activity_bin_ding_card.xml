@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dlwx.onedrop.activitys.BinDingCardActivity">
+
+    <include
+        layout="@layout/toolbar"
+        />
+        <RelativeLayout
+            android:id="@+id/rl_entry"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+
+            android:background="@mipmap/icon_tianjiayhkzhifu"
+            android:layout_margin="10dp"
+            >
+
+        </RelativeLayout>
+    <Button
+        android:id="@+id/btn_addBink"
+        android:visibility="gone"
+        android:layout_marginTop="100dp"
+        style="@style/Buutton_submit"
+        android:text="绑定支付宝帐号"
+
+        android:layout_alignParentBottom="true"
+        />
+        <com.yanzhenjie.recyclerview.swipe.SwipeMenuRecyclerView
+            android:id="@+id/rev_view"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.yanzhenjie.recyclerview.swipe.SwipeMenuRecyclerView>
+
+
+</LinearLayout>

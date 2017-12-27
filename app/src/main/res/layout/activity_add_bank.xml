@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dlwx.onedrop.activitys.AddBankActivity">
+    <include
+        layout="@layout/toolbar"
+        />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="20dp"
+            android:background="#EEEEEE"
+            >
+            <TextView
+
+                style="@style/textcontentsizeblack"
+                android:text="支付宝姓名"
+                android:layout_weight="1"
+                />
+                <EditText
+                    android:id="@+id/et_name"
+                    android:layout_width="0dp"
+                    android:layout_weight="6"
+                    android:padding="10dp"
+                    android:hint="请与支付宝实名认证的姓名一致"
+                    android:textSize="13sp"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:layout_marginTop="15dp"
+        android:background="#EEEEEE"
+        >
+        <TextView
+
+            style="@style/textcontentsizeblack"
+            android:text="支付宝帐号"
+            android:layout_weight="1"
+            />
+        <EditText
+            android:id="@+id/et_banknumber"
+            android:layout_width="0dp"
+            android:layout_weight="6"
+            android:padding="10dp"
+          android:hint="支付宝帐号"
+            android:inputType="phone"
+            android:textSize="13sp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            />
+    </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_submit"
+            style="@style/Buutton_submit"
+            android:layout_marginTop="40dp"
+            android:text="@string/submit"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            />
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dlwx.onedrop.activitys.TiXianRecordActivity">
+    <include
+        layout="@layout/toolbar"
+        />
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:layout_width="match_parent"
+        android:id="@+id/refreshLayout"
+        app:srlEnablePreviewInEditMode="true"
+        android:layout_height="match_parent">
+        <ListView
+            android:layout_width="match_parent"
+            android:id="@+id/lv_list"
+            android:divider="@color/white"
+            android:layout_height="wrap_content">
+
+        </ListView>
+        <include
+            layout="@layout/entry"
+            />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</LinearLayout>

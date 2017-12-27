@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dlwx.onedrop.activitys.CityListActivity">
+    <include
+        layout="@layout/toolbar"
+        />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            >
+            <TextView
+
+                style="@style/textcontentsizeblack"
+                android:text="当前位置："
+                />
+            <TextView
+                android:id="@+id/tv_city"
+                style="@style/textcontentsizeblack"
+                android:text="全国"
+                />
+            <ImageView
+                android:layout_gravity="center_vertical"
+                style="@style/ImagePismall"
+                android:layout_marginLeft="5dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/icon_dingwei"
+                />
+        </LinearLayout>
+        <include
+            layout="@layout/div_line"
+            />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:id="@+id/lv_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></ListView>
+        <TextView
+            android:id="@+id/dialog"
+            android:layout_width="80.0dip"
+            android:layout_height="80.0dip"
+            android:layout_gravity="center"
+            android:background="@drawable/shap_hot_city_bg"
+            android:gravity="center"
+            android:textColor="#ffffffff"
+            android:textSize="30.0dip"
+            android:visibility="invisible" />
+        <com.dlwx.onedrop.initialsort.SideBar
+            android:id="@+id/sidrbar"
+            android:layout_width="30.0dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right|center" />
+    </FrameLayout>
+</LinearLayout>

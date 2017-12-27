@@ -1,0 +1,125 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dlwx.onedrop.fragments.ShopCatFragment">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+            <TextView
+
+                style="@style/texttitleblacksize"
+                android:layout_centerHorizontal="true"
+                android:padding="10dp"
+                android:textSize="18sp"
+                android:text="购物车"
+                />
+                <TextView
+                    android:id="@+id/tv_edit"
+                  style="@style/textcontentsizeblack"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp"
+                    android:text="编辑"
+                    />
+        </RelativeLayout>
+        <View
+            style="@style/div_line"
+            />
+
+    <LinearLayout
+        android:id="@+id/ll_entry"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginTop="80dp"
+        android:layout_gravity="center_horizontal"
+        >
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/icon_kong"
+            />
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="购物车竟然是空的"
+                android:layout_marginTop="5dp"
+                />
+    </LinearLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/lv_list"
+        ></ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cb_allcheck"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:background="@drawable/selete_check"
+            android:button="@null"
+            />
+
+        <TextView
+            style="@style/textcontentsizeblack"
+            android:layout_width="0dp"
+
+
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="全选" />
+
+        <TextView
+            style="@style/textcontentsizeblack"
+            android:layout_gravity="center_vertical"
+            android:text="合计:" />
+
+        <TextView
+
+            android:id="@+id/tv_toatl"
+            style="@style/textcontentsizeblack"
+            android:layout_width="wrap_content"
+            android:text="￥0.0"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_horizontal"
+            android:textColor="@color/orange" />
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:background="#FE7c7c"
+            android:text="购买"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="80dp"
+            android:visibility="gone"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/orange"
+            android:text="删除"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <!--分隔线-->
+    <color name="div_color">#DcDcDc</color>
+    <color name="bottom_selete_color">#FE4F00</color>
+    <color name="white">#FFFFFF</color>
+    <color name="red">#FF0000</color>A3A3A
+    <color name="black">#3A3A3A</color>
+    <color name="hot_city_bg">#F5F5F5</color>
+    <color name="orange">#FE4F00</color>
+    <color name="garytext">#A6A6A6</color>
+</resources>
